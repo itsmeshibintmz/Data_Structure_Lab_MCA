@@ -41,4 +41,25 @@ void main() {
     for(i=0;i<n;i++)
         printf("%d\n",a[i]);
     }
+
+/*Search */
+    printf("\nEnter the element to be searched");
+    scanf("%d",&element);
+    for(i=0;i<n;i++) {
+        if(a[i]==element)
+            printf("\nElement found at position %d",i);
+        else
+            printf("\nElement not found");
+    }
+/* Update */
+    printf("\nEnter the position and element to be updated");
+    scanf("%d%d",&pos,&element);
+    if(pos>n)
+    printf("Update not possible");
+    else {
+        a[pos]=element;
+        printf("\nThe elements of the array after update are");
+        for(i=0;i<n;i++)
+            printf("%d\n",a[i]);
+    }
 }

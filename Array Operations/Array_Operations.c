@@ -32,14 +32,14 @@ void main() {
     printf("\nEnter the position to be deleted\n");
     scanf("%d",&pos);
     if(pos>n)
-    printf("Deletion not possible");
+        printf("Deletion not possible");
     else {
         a[pos]=a[pos+1];
-    for(i=pos+1;i<=n;i++)
-        a[i]=a[i+1];
-    printf("\nThe elements of the array after deletion are\n");
-    for(i=0;i<n;i++)
-        printf("%d\n",a[i]);
+        for(i=pos+1;i<=n;i++)
+            a[i]=a[i+1];
+        printf("\nThe elements of the array after deletion are\n");
+        for(i=0;i<n;i++)
+            printf("%d\n",a[i]);
     }
 
 /*Search */
@@ -51,11 +51,12 @@ void main() {
         else
             printf("\nElement not found");
     }
+    
 /* Update */
     printf("\nEnter the position and element to be updated\n");
-    scanf("%d%d",&pos,&element);
+    scanf("%d %d",&pos,&element);
     if(pos>n)
-    printf("Update not possible");
+        printf("Update not possible");
     else {
         a[pos]=element;
         printf("\nThe elements of the array after update are\n");

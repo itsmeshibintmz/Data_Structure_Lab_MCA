@@ -18,7 +18,7 @@ void main() {
     printf("\nEnter the position and element to be inserted\n");  
     scanf("%d%d",&pos,&element);
     if(pos>n)
-    printf("Insertion not possible");
+        printf("Insertion not possible");
     else { 
     for(i=n;i>=pos;i--)
         a[i+1]=a[i];

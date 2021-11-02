@@ -2,9 +2,10 @@
 
 #include <stdio.h>
 void main() {
-    int a[100], b[100], c[200], i, j, k,m,n,temp;
+    int i, j, k,m,n,temp;
     printf("Enter the number of elements in the first array\n");
     scanf("%d",&m);
+    int a[m];
     printf("Enter the elements of the first array\n");
     for(i=0;i<m;i++) {
         scanf("%d",&a[i]);
@@ -30,6 +31,7 @@ void main() {
     }
     printf("\nEnter the number of elements in the second array\n");
     scanf("%d",&n);
+    int b[n],c[m+n];
     printf("\nEnter the elements of the second array\n");
     for(i=0;i<n;i++) {
         scanf("%d",&b[i]);
@@ -55,14 +57,28 @@ void main() {
     }
 
 /* Merge and sort two arrays into third One */
-    k=0;
-    for(i=0;i<m;i++) {
+    i=j=k=0;
+    for(i=0;i<m&&j<n;) {
+        if(a[i]<b[j]) {
+            c[k]=a[i];
+            k++;
+            i++;
+        }
+        else {
+            c[k]=b[j];
+            k++;
+            j++;
+        }
+    }
+    while(i<m) {
         c[k]=a[i];
         k++;
+        i++;
     }
-    for(i=0;i<n;i++) {
-        c[k]=b[i];
+    while(j<n) {
+        c[k]=b[j];
         k++;
+        j++;
     }
     printf("\nMerged and sorted array is\n");
     for(i=0;i<k;i++) {

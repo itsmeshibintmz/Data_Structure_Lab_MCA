@@ -55,5 +55,17 @@ void main() {
     }
 
 /* Merge and sort two arrays into third One */
-    
+    k=0;
+    for(i=0;i<m;i++) {
+        c[k]=a[i];
+        k++;
+    }
+    for(i=0;i<n;i++) {
+        c[k]=b[i];
+        k++;
+    }
+    printf("\nMerged and sorted array is\n");
+    for(i=0;i<k;i++) {
+        printf("%d\t",c[i]);
+    }
 }

@@ -38,4 +38,15 @@ void main() {
     for(i=0;i<n;i++) {
         printf("%d\t",b[i]);
     }
+
+/* Sort the second array */
+    for(i=0;i<n;i++) {
+        for(j=i+1;j<n;j++) {
+            if(b[i]>b[j]) {
+                temp=b[i];
+                b[i]=b[j];
+                b[j]=temp;
+            }
+        }
+    }
 }

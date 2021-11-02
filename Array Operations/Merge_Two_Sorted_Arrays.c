@@ -49,4 +49,11 @@ void main() {
             }
         }
     }
+    printf("\nSorted second array is\n");
+    for(i=0;i<n;i++) {
+        printf("%d\t",b[i]);
+    }
+
+/* Merge and sort two arrays into third One */
+    
 }

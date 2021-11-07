@@ -1,4 +1,4 @@
-/* C Program to sort two merged arrays */
+/* C Program to sort and merge two arrays */
 
 #include <stdio.h>
 void main() {

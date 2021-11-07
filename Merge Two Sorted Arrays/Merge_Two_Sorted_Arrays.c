@@ -7,13 +7,12 @@ void main() {
     scanf("%d",&m);
     int a[m];
     printf("Enter the elements of the first array\n");
-    for(i=0;i<m;i++) {
+    for(i=0;i<m;i++) 
         scanf("%d",&a[i]);
-    }
+
     printf("\nOriginal First Array is\n");
-    for(i=0;i<m;i++) {
+    for(i=0;i<m;i++) 
         printf("%d\t",a[i]);
-    }
 
 /* Sort the first array */
     for(i=0;i<m;i++) {
@@ -33,13 +32,12 @@ void main() {
     scanf("%d",&n);
     int b[n],c[m+n];
     printf("\nEnter the elements of the second array\n");
-    for(i=0;i<n;i++) {
+    for(i=0;i<n;i++) 
         scanf("%d",&b[i]);
-    }
+
     printf("\nOriginal Second Array is\n");  
-    for(i=0;i<n;i++) {
+    for(i=0;i<n;i++) 
         printf("%d\t",b[i]);
-    }
 
 /* Sort the second array */
     for(i=0;i<n;i++) {
@@ -52,9 +50,8 @@ void main() {
         }
     }
     printf("\nSorted second array is\n");
-    for(i=0;i<n;i++) {
+    for(i=0;i<n;i++) 
         printf("%d\t",b[i]);
-    }
 
 /* Merge and sort two arrays into third One */
     i=j=k=0;
@@ -81,7 +78,6 @@ void main() {
         j++;
     }
     printf("\nMerged and sorted array is\n");
-    for(i=0;i<k;i++) {
+    for(i=0;i<k;i++) 
         printf("%d\t",c[i]);
-    }
 }

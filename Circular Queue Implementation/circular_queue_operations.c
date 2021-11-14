@@ -100,6 +100,7 @@ int main() {
     }
     return 0;
 }
+
 // Output:
 // 1. Enqueue
 // 2. Dequeue
@@ -246,18 +247,21 @@ int main() {
 // 5. Exit
 // Enter your choice
 // 5
+
 // Total execution time is 0.001149 seconds.
 // Time taken by CPU is 0.001149 seconds.
 // Time taken by I/O is 0.000000 seconds.
 // Total time taken by the process is 0.001149 seconds.
 // Time Complexity: O(1)
 // Space Complexity: O(n)
+
 // Approach:
 // We can use a queue to implement the queue operations.
 // We can use a queue to implement the search operation.
 // We can use a queue to implement the display operation.
 // We can use a queue to implement the dequeue operation.
 // We can use a queue to implement the enqueue operation.
+
 // Algorithm:
 // 1. Create a queue of size MAX.
 // 2. Display the menu.

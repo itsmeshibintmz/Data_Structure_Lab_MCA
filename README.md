@@ -3,4 +3,4 @@
 
 Data Structure Lab Programs for MCA KTU S1
 
-Update the programs with your ideas.
+Contribute your ideas to this repository.

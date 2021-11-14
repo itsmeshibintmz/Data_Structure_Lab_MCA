@@ -114,4 +114,135 @@ int main() {
 // 2. Dequeue
 // 3. Display
 // 4. Search
+// 5. Exit  
+// Enter your choice
+// 1
+// Enter the element to be inserted
+// 20
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
 // 5. Exit
+// Enter your choice
+// 1
+// Enter the element to be inserted
+// 30
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 1
+// Enter the element to be inserted
+// 40
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 1
+// Enter the element to be inserted
+// 50
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 2
+// Dequeued element is 10
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 2
+// Dequeued element is 20
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 2
+// Dequeued element is 30
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 2
+// Dequeued element is 40
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 2
+// Dequeued element is 50
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 3
+// Queue elements are:
+// 10
+// 20
+// 30
+// 40
+// 50
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 4
+// Enter the element to be searched
+// 10
+// Element found at location 0
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 4
+// Enter the element to be searched
+// 20
+// Element found at location 1
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 4
+// Enter the element to be searched
+// 30
+// Element found at location 2
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 4
+// Enter the element to be searched
+// 40
+// Element found at location 3
+// 1. Enqueue
+// 2. Dequeue
+// 3. Display
+// 4. Search
+// 5. Exit
+// Enter your choice
+// 5

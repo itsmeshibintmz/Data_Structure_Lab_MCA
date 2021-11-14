@@ -64,3 +64,14 @@ void main() {
             printf("%d\n",a[i]);
     }
 }
+// Algorithm:
+// 1. Take the size of the array as input.
+// 2. Take the elements of the array as input.
+// 3. Traverse the array.
+// 4. Insertion.
+// 5. Deletion.
+// 6. Search.
+// 7. Update.
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+

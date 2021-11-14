@@ -54,11 +54,25 @@ void display(queue *q) {
     for(i=q->front;i<=q->rear;i++)
         printf("%d\n",q->array[i]);
 }
+void searchQueue(queue *q) {
+    int element, i, flag = 0;
+    printf("Enter the element to be searched\n");
+    scanf("%d",&element);
+    for(i=q->front;i<=q->rear;i++) {
+        if(q->array[i] == element) {
+            printf("Element found at location %d\n",i);
+            flag = 1;
+            break;
+        }
+    }
+    if(flag == 0)
+        printf("Element not found\n");
+}
 int main() {
     queue *q = createQueue(MAX);
     int choice, element, i;
     while(1) {
-        printf("1. Enqueue\n2. Dequeue\n3. Display\n4. Exit\n");
+        printf("1. Enqueue\n2. Dequeue\n3. Display\n4. Search\n5. Exit\n");
         printf("Enter your choice\n");
         scanf("%d",&choice);
         switch(choice) {
@@ -76,6 +90,9 @@ int main() {
                 display(q);
                 break;
             case 4:
+                searchQueue(q);
+                break;
+            case 5:
                 exit(0);
             default:
                 printf("Wrong choice\n");
@@ -87,7 +104,8 @@ int main() {
 // 1. Enqueue
 // 2. Dequeue
 // 3. Display
-// 4. Exit
+// 4. Search
+// 5. Exit
 // Enter your choice
 // 1
 // Enter the element to be inserted
@@ -95,84 +113,5 @@ int main() {
 // 1. Enqueue
 // 2. Dequeue
 // 3. Display
-// 4. Exit
-// Enter your choice
-// 1
-// Enter the element to be inserted
-// 20
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 1
-// Enter the element to be inserted
-// 30
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 1
-// Enter the element to be inserted
-// 40
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 1
-// Enter the element to be inserted
-// 50
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 2
-// Dequeued element is 10
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 2
-// Dequeued element is 20
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 2
-// Dequeued element is 30
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 2
-// Dequeued element is 40
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 2
-// Dequeued element is 50
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 3
-// Queue elements are:
-// 10
-// 20
-// 30
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice
-// 4
-
+// 4. Search
+// 5. Exit

@@ -93,7 +93,7 @@ int main() {
                 searchQueue(q);
                 break;
             case 5:
-                printf("Exiting, bye!")
+                printf("Exiting, bye!");
                 exit(0);
             default:
                 printf("Wrong choice\n");

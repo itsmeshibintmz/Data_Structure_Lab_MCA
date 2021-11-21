@@ -103,4 +103,68 @@ Algorithm:Search
     3. Assign the address of temp->next to temp.
 4. Return -1.
 */
+/*
+Output:
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 1
+Enter the element to be pushed: 1
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 1
+Enter the element to be pushed: 2
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 1
+Enter the element to be pushed: 3
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 1
+Enter the element to be pushed: 4
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 1
+Enter the element to be pushed: 5
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 2
+Popped element is 5
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 2
+Popped element is 4
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 3
+Enter the element to be searched: 5
+Element found at position 4
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 3
+Enter the element to be searched: 6
+Element not found
+1. Push
+2. Pop
+3. Search
+4. Exit
+Enter your choice: 4
+*/
 

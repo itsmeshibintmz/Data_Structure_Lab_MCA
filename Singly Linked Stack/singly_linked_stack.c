@@ -80,5 +80,27 @@ int search(int item)
     }
     return -1;
 }
-
+/*
+Algorithm:Push
+1. Create a node temp.
+2. Assign the value of item to temp->data.
+3. Assign the address of top to temp->next.
+4. Assign the address of temp to top.
+5. Return.
+Algorithm:Pop
+1. If top is NULL, return -1.
+2. Create a node temp.
+3. Assign the value of top->data to temp->data.
+4. Assign the address of top->next to temp->next.
+5. Assign the address of temp to top.
+6. Return temp->data.
+Algorithm:Search
+1. Create a node temp.
+2. Assign the address of top to temp.
+3. While temp is not NULL
+    1. If temp->data is equal to item, return count.
+    2. Else, increment count.
+    3. Assign the address of temp->next to temp.
+4. Return -1.
+*/
 

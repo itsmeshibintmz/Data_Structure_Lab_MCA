@@ -1,4 +1,5 @@
-/* C Program to perform array operations such as Traversal, Insertion, Deletion, Search and Update */
+/* C Program to perform array operations such as Traversal, Insertion,
+    Deletion, Search and Update */
 
 #include<stdio.h>
 void main() {

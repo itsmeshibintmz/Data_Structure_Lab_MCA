@@ -1,4 +1,5 @@
-/* C Program to perform Circular Queue Operations such as Add, Delete and Search */
+/* C Program to perform Circular Queue Operations such as Add, Delete and
+    Search */
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>

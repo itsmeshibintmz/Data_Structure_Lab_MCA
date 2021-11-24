@@ -201,4 +201,71 @@ Algorithm:
         7.2.1. Print data of ptr
         7.2.2. Make ptr point to next node
 
+Output:
+1. Insert at end
+2. Insert at begin
+3. Insert at pos
+4. Delete at end
+5. Delete at begin
+6. Delete at pos
+7. Display
+8. Search
+9. Exit
+Enter your choice: 1
+Enter the data: 10
+1. Insert at end
+2. Insert at begin
+3. Insert at pos
+4. Delete at end
+5. Delete at begin
+6. Delete at pos
+7. Display
+8. Search
+9. Exit
+Enter your choice: 2
+Enter the data: 20
+1. Insert at end
+2. Insert at begin
+3. Insert at pos
+4. Delete at end
+5. Delete at begin
+6. Delete at pos
+7. Display
+8. Search
+9. Exit
+Enter your choice: 3
+Enter the data: 30
+Enter the position: 2
+1. Insert at end
+2. Insert at begin
+3. Insert at pos
+4. Delete at end    
+5. Delete at begin
+6. Delete at pos
+7. Display
+8. Search
+9. Exit
+Enter your choice: 4
+1. Insert at end
+2. Insert at begin
+3. Insert at pos
+4. Delete at end
+5. Delete at begin
+6. Delete at pos
+7. Display
+8. Search
+9. Exit
+Enter your choice: 5
+1. Insert at end
+2. Insert at begin
+3. Insert at pos
+4. Delete at end
+5. Delete at begin
+6. Delete at pos
+7. Display
+8. Search
+9. Exit
+Enter your choice: 6
+Enter the position: 1
+*/
  

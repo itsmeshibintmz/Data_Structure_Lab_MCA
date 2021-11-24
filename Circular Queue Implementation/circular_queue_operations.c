@@ -1,14 +1,17 @@
-/* C Program to perform Circular Queue Operations such as Add, Delete and
-    Search */
+/* C Program to perform Circular Queue Operations such as Add, 
+    Delete and Search */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>
 #define MAX 100 
+/* A structure to represent a queue */
 typedef struct {
     int front, rear;
     int size;
     int *array;
 } queue;
+/* Function to create a queue of given size */
 queue *createQueue(int size) {
     queue *q = (queue *)malloc(sizeof(queue));
     q->size = size;
@@ -16,12 +19,15 @@ queue *createQueue(int size) {
     q->array = (int *)malloc(sizeof(int)*size);
     return q;
 }
+/* Function to check if queue is full */
 int isFull(queue *q) {
     return (q->rear == q->size-1);
 }
+/* Function to check if queue is empty */
 int isEmpty(queue *q) {
     return (q->front == -1);
 }
+/* Function to add an item to the queue */
 void enqueue(queue *q, int element) {
     if(isFull(q)) {
         printf("Queue is full\n");
@@ -32,6 +38,7 @@ void enqueue(queue *q, int element) {
     q->rear = q->rear + 1;
     q->array[q->rear] = element;
 }
+/* Function to remove an item from queue */
 int dequeue(queue *q) {
     int element;
     if(isEmpty(q)) {
@@ -45,6 +52,7 @@ int dequeue(queue *q) {
     }
     return element;
 }
+/* Function to display the queue */
 void display(queue *q) {
     int i;
     if(isEmpty(q)) {
@@ -55,6 +63,7 @@ void display(queue *q) {
     for(i=q->front;i<=q->rear;i++)
         printf("%d\n",q->array[i]);
 }
+/* Function to search an element in queue */
 void searchQueue(queue *q) {
     int element, i, flag = 0;
     printf("Enter the element to be searched\n");
@@ -69,10 +78,12 @@ void searchQueue(queue *q) {
     if(flag == 0)
         printf("Element not found\n");
 }
+/* Driver program to test above functions */
 int main() {
     queue *q = createQueue(MAX);
     int choice, element, i;
     while(1) {
+        /* Take choice from user */
         printf("1. Enqueue\n2. Dequeue\n3. Display\n4. Search\n5. Exit\n");
         printf("Enter your choice\n");
         scanf("%d",&choice);

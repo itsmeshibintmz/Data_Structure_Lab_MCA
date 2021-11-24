@@ -150,3 +150,47 @@ void search(int data) {
     }
     printf("\nData not found\n");
 }
+/*
+Algorithm:
+1. Insert at end:
+    1.1. Allocate memory for new node
+    1.2. Assign data to new node
+    1.3. Make new node point to head
+    1.4. Make head point to new node
+    1.5. Make new node point to previous node
+    1.6. Make previous node point to new node
+2. Insert at begin:
+    2.1. Allocate memory for new node
+    2.2. Assign data to new node
+    2.3. Make new node point to head
+    2.4. Make head point to new node
+    2.5. Make new node point to next node
+    2.6. Make next node point to new node
+3. Insert at pos:
+    3.1. Allocate memory for new node
+    3.2. Assign data to new node
+    3.3. Make new node point to head
+    3.4. Make head point to new node
+    3.5. Make new node point to next node
+    3.6. Make next node point to new node
+    3.7. Make new node point to previous node
+    3.8. Make previous node point to new node
+4. Delete at end:
+    4.1. Make previous node point to head
+    4.2. Make head point to previous node
+    4.3. Free memory of last node
+5. Delete at begin:
+    5.1. Make next node point to head
+    5.2. Make head point to next node
+    5.3. Free memory of first node
+6. Delete at pos:
+    6.1. Make previous node point to next node
+    6.2. Make next node point to previous node
+    6.3. Free memory of node at pos
+7. Display:
+    7.1. Make ptr point to head
+    7.2. While ptr is not pointing to head
+        7.2.1. Print data of ptr
+        7.2.2. Make ptr point to next node
+
+ 

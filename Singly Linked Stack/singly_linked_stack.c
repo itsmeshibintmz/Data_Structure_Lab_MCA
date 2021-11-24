@@ -17,9 +17,11 @@ int main()
     int choice, item, pos;
     while(1)
     {
+        /* Takes choice from user */
         printf("\n1. Push\n2. Pop\n3. Search\n4. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
+        /* Perform operation according to choice */
         switch(choice)
         {
             case 1: printf("Enter the element to be pushed: ");
@@ -46,6 +48,7 @@ int main()
     }
     return 0;
 }
+/* Function to push an element to stack */
 void push(int item)
 {
     struct node *temp;
@@ -54,6 +57,7 @@ void push(int item)
     temp->next = top;
     top = temp;
 }
+/* Function to pop an element from stack */
 int pop()
 {
     struct node *temp;
@@ -66,6 +70,7 @@ int pop()
     free(temp);
     return item;
 }
+/* Function to search an element in stack */
 int search(int item)
 {
     int count = 1;

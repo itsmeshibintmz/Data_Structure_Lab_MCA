@@ -70,6 +70,7 @@ int main() {
     }
     return 0;
 }
+/* Inserts a node at the end of the list */
 void insert_at_end(int data) {
     struct node *temp;
     temp = (struct node *)malloc(sizeof(struct node));
@@ -79,6 +80,7 @@ void insert_at_end(int data) {
     head.prev->next = temp;
     head.prev = temp;
 }
+/* Inserts a node at the beginning of the list */
 void insert_at_begin(int data) {
     struct node *temp;
     temp = (struct node *)malloc(sizeof(struct node));
@@ -88,6 +90,7 @@ void insert_at_begin(int data) {
     head.next->prev = temp;
     head.next = temp;
 }
+/* Inserts a node at the given position */
 void insert_at_pos(int data, int pos) {
     struct node *temp, *ptr;
     int i;
@@ -102,6 +105,7 @@ void insert_at_pos(int data, int pos) {
     ptr->next->prev = temp;
     ptr->next = temp;
 }
+/* Deletes a node from the end of the list */
 void delete_at_end() {
     struct node *temp;
     temp = head.prev;
@@ -109,6 +113,7 @@ void delete_at_end() {
     temp->prev->next = &head;
     free(temp);
 }
+/* Deletes a node from the beginning of the list */
 void delete_at_begin() {
     struct node *temp;
     temp = head.next;
@@ -116,6 +121,7 @@ void delete_at_begin() {
     temp->next->prev = &head;
     free(temp);
 }
+/* Deletes a node from the given position */
 void delete_at_pos(int pos) {
     struct node *temp, *ptr;
     int i;
@@ -128,6 +134,7 @@ void delete_at_pos(int pos) {
     temp->next->prev = ptr;
     free(temp);
 }
+/* Displays the list */
 void display() {
     struct node *ptr;
     ptr = head.next;
@@ -138,6 +145,7 @@ void display() {
     }
     printf("\n");
 }
+/* Searches for a node with the given data */
 void search(int data) {
     struct node *ptr;
     ptr = head.next;

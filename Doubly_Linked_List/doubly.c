@@ -20,7 +20,7 @@ void main () {
     printf("Doubly Linked List\n");
     printf("------------------");
     while(choice != 9){
-        printf("\n1.Insert in begining\n2.Insert at last\n3.Insert at any random location\n4.Delete from Beginning\n5.Delete from last\n6.Delete the node after the given data\n7.Search\n8.Show\n9.Exit\n");
+        printf("\n1.Insert in begining\n2.Insert at last\n3.Insert at any specific location\n4.Delete from Beginning\n5.Delete from last\n6.Delete the node after the given data\n7.Search\n8.Show\n9.Exit\n");
         printf("\nEnter your choice : \n");
         scanf("%d",&choice);
         switch(choice) {

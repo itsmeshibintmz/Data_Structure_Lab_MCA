@@ -81,9 +81,9 @@ void insertion_beginning() {
             head=ptr;
         }
     printf("\nNode inserted\n");
+    }
 }
 
-}
 void insertion_last() {
     struct node *ptr,*temp;
     int item;

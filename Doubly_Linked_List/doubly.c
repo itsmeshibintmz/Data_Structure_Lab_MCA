@@ -175,7 +175,7 @@ void deletion_last() {
     }
     else {
         ptr = head;
-        if(ptr->next != NULL) {
+        while(ptr->next != NULL) {
             ptr = ptr -> next;
         }
         ptr -> prev -> next = NULL;

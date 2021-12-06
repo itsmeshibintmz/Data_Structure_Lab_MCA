@@ -14,24 +14,33 @@ struct node *root= NULL;
 
 // Function to create new node
 struct node* createNode(int data) {
+
     struct node *newNode = (struct node*)malloc(sizeof(struct node));
+
     newNode->data= data;
     newNode->left = NULL;
     newNode->right = NULL;
+
     return newNode;
 }
 
 // Insert new data to tree
 void insert(int data) {
+
     struct node *newNode = createNode(data);
+
     if(root == NULL) {
         root = newNode;
         return;
     }
     else {
+
         struct node *current = root, *parent = NULL;
+
         while(true) {
+
             parent = current;
+
             if(data < current->data) {
                 current = current->left;
                 if(current == NULL) {
@@ -59,14 +68,16 @@ struct node* minNode(struct node *root) {
         return root;
 }
 
-// Delete a node from tree
+// Delete a node form tree
 struct node* deleteNode(struct node *node, int value) {
-    if(node == NULL){
-          return NULL;
+    if(node == NULL) {
+        return NULL;
     }
     else {
+
         if(value < node->data)
             node->left = deleteNode(node->left, value);
+
         else if(value > node->data)
             node->right = deleteNode(node->right, value);
 
@@ -102,16 +113,22 @@ struct node* deleteNode(struct node *node, int value) {
 
 // Inorder traversal
 void inorderTraversal(struct node *node) {
+
+
     if(root == NULL){
         printf("Tree is empty\n");
-            return;
+        return;
     }
     else {
+
         if(node->left!= NULL)
             inorderTraversal(node->left);
+
         printf("%d ", node->data);
+
         if(node->right!= NULL)
             inorderTraversal(node->right);
+
     }
 }
 
@@ -119,19 +136,21 @@ void inorderTraversal(struct node *node) {
 struct node* search(int data) {
     struct node *current = root;
     printf("Visiting elements: ");
-    while(current->data != data) {
+
+    while(current->data != data){
+
         if(current != NULL) {
             printf("%d ",current->data);
 
-            // go to left tree
+            //go to left tree
             if(current->data > data) {
                 current = current->left;
-            }    
-            // else go to right tree
+            }  //else go to right tree
             else {
                 current = current->right;
             }
-            // not found
+
+            //not found
             if(current == NULL) {
                 printf("The given data %d not found in the tree\n", data);
                 return NULL;
@@ -139,12 +158,13 @@ struct node* search(int data) {
         }
     }
     printf("\nData %d found in tree\n", data);
-    // return current;
+    //return current;
 }
 
 void main() {
     int data;
     int choice = 0;
+
     while(choice != 5) {
         printf("\n1.Insertion\n2.Deletion\n3.Inorder Traversal\n4.Search\n5.Quit\nEnter your choice: ");
         scanf("%d", &choice);

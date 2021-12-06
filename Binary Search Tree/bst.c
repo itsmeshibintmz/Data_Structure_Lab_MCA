@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 // Node of binary tree
-struct node{
+struct node {
     int data;
     struct node *left;
     struct node *right;
@@ -13,34 +13,25 @@ struct node{
 struct node *root= NULL;
 
 // Function to create new node
-struct node* createNode(int data){
-
+struct node* createNode(int data) {
     struct node *newNode = (struct node*)malloc(sizeof(struct node));
-
     newNode->data= data;
     newNode->left = NULL;
     newNode->right = NULL;
-
     return newNode;
 }
 
 // Insert new data to tree
 void insert(int data) {
-
     struct node *newNode = createNode(data);
-
-    if(root == NULL){
+    if(root == NULL) {
         root = newNode;
         return;
-      }
+    }
     else {
-
         struct node *current = root, *parent = NULL;
-
         while(true) {
-
             parent = current;
-
             if(data < current->data) {
                 current = current->left;
                 if(current == NULL) {
@@ -72,13 +63,10 @@ struct node* minNode(struct node *root) {
 struct node* deleteNode(struct node *node, int value) {
     if(node == NULL){
           return NULL;
-     }
+    }
     else {
-
         if(value < node->data)
             node->left = deleteNode(node->left, value);
-
-
         else if(value > node->data)
             node->right = deleteNode(node->right, value);
 
@@ -114,83 +102,78 @@ struct node* deleteNode(struct node *node, int value) {
 
 // Inorder traversal
 void inorderTraversal(struct node *node) {
-
-
     if(root == NULL){
         printf("Tree is empty\n");
-          return;
-     }
+            return;
+    }
     else {
-
         if(node->left!= NULL)
             inorderTraversal(node->left);
-
         printf("%d ", node->data);
-
         if(node->right!= NULL)
-          inorderTraversal(node->right);
+            inorderTraversal(node->right);
 
     }
 }
 
 // Search a node in tree
-struct node* search(int data){
-   struct node *current = root;
-   printf("Visiting elements: ");
+struct node* search(int data) {
+    struct node *current = root;
+    printf("Visiting elements: ");
+    while(current->data != data) {
+        if(current != NULL) {
+            printf("%d ",current->data);
 
-   while(current->data != data){
-
-      if(current != NULL) {
-         printf("%d ",current->data);
-
-         //go to left tree
-         if(current->data > data){
-            current = current->left;
-         }  //else go to right tree
-         else {
-            current = current->right;
-         }
-
-         //not found
-         if(current == NULL){
-            printf("The given data %d not found in the tree\n", data);
-            return NULL;
-         }
-      }
-   }
-   printf("\nData %d found in tree\n", data);
-   //return current;
+            //go to left tree
+            if(current->data > data) {
+                current = current->left;
+            }    
+            //else go to right tree
+            else {
+                current = current->right;
+            }
+            //not found
+            if(current == NULL) {
+                printf("The given data %d not found in the tree\n", data);
+                return NULL;
+            }
+        }
+    }
+    printf("\nData %d found in tree\n", data);
+    //return current;
 }
 
-void main()
-{
+void main() {
     int data;
     int choice = 0;
-
     while(choice != 5) {
-      printf("\n1.Insertion\n2.Deletion\n3.Inorder Traversal\n4.Search\n5.Quit\nEnter your choice: ");
-      scanf("%d", &choice);
-      switch (choice) {
-        case 1: printf("\nEnter the node to be insertd into binary search tree: ");
+        printf("\n1.Insertion\n2.Deletion\n3.Inorder Traversal\n4.Search\n5.Quit\nEnter your choice: ");
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1: 
+                printf("\nEnter the node to be insertd into binary search tree: ");
                 scanf("%d", &data);
                 insert(data);
                 break;
-        case 2: printf("\nEnter the node to be deleted from binary search tree: ");
+            case 2: 
+                printf("\nEnter the node to be deleted from binary search tree: ");
                 scanf("%d", &data);
                 deleteNode(root, data);
                 break;
-        case 3: printf("\nInorder traversal of tree\n");
+            case 3: 
+                printf("\nInorder traversal of tree\n");
                 inorderTraversal(root);
                 break;
-        case 4: printf("\nEnter the value to be searched in the tree: ");
+            case 4: 
+                printf("\nEnter the value to be searched in the tree: ");
                 scanf("%d", &data);
                 struct node *searchElement = NULL;
                 search(data);
                 break;
-        case 5: exit(0);
-        default: printf("Wrong choice !!!!!");
-
-      }
+            case 5: 
+                exit(0);
+            default: 
+                printf("Wrong choice !!!!!");
+        }
     }
-
 }

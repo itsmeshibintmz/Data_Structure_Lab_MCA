@@ -112,7 +112,6 @@ void inorderTraversal(struct node *node) {
         printf("%d ", node->data);
         if(node->right!= NULL)
             inorderTraversal(node->right);
-
     }
 }
 
@@ -124,15 +123,15 @@ struct node* search(int data) {
         if(current != NULL) {
             printf("%d ",current->data);
 
-            //go to left tree
+            // go to left tree
             if(current->data > data) {
                 current = current->left;
             }    
-            //else go to right tree
+            // else go to right tree
             else {
                 current = current->right;
             }
-            //not found
+            // not found
             if(current == NULL) {
                 printf("The given data %d not found in the tree\n", data);
                 return NULL;
@@ -140,7 +139,7 @@ struct node* search(int data) {
         }
     }
     printf("\nData %d found in tree\n", data);
-    //return current;
+    // return current;
 }
 
 void main() {

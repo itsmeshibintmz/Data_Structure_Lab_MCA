@@ -166,6 +166,8 @@ void main() {
     int choice = 0;
 
     while(choice != 5) {
+        printf("Binary Search Tree\n");
+        printf("------------------\n");
         printf("\n1.Insertion\n2.Deletion\n3.Inorder Traversal\n4.Search\n5.Quit\nEnter your choice: ");
         scanf("%d", &choice);
         switch (choice) {

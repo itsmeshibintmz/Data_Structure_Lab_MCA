@@ -258,6 +258,7 @@ void search() {
 // 4. Assign prev of new node as NULL
 // 5. Assign head as new node
 // 6. Display the list
+
 // Algorithm for Insertion at last:
 // 1. Create a new node
 // 2. Assign data to the new node
@@ -265,6 +266,7 @@ void search() {
 // 4. Assign prev of new node as last node
 // 5. Assign next of last node as new node
 // 6. Display the list
+
 // Algorithm for Insertion at specified location:
 // 1. Create a new node
 // 2. Assign data to the new node
@@ -272,21 +274,25 @@ void search() {
 // 4. Assign prev of new node as current node's prev
 // 5. Assign next of current node's prev as new node
 // 6. Display the list
+
 // Algorithm for Deletion at beginning:
 // 1. Check if list is empty
 // 2. If list is empty, display error message
 // 3. If list is not empty, delete the first node
 // 4. Display the list
+
 // Algorithm for Deletion at last:
 // 1. Check if list is empty
 // 2. If list is empty, display error message
 // 3. If list is not empty, delete the last node
 // 4. Display the list
+
 // Algorithm for Deletion at specified location:
 // 1. Check if list is empty
 // 2. If list is empty, display error message
 // 3. If list is not empty, delete the node at specified location
 // 4. Display the list
+
 // Algorithm for Search:
 // 1. Check if list is empty
 // 2. If list is empty, display error message
@@ -294,6 +300,7 @@ void search() {
 // 4. If item is found, display the location
 // 5. If item is not found, display error message
 // 6. Display the list
+
 // Algorithm for Display:
 // 1. Check if list is empty
 // 2. If list is empty, display error message

@@ -198,3 +198,49 @@ void main() {
         }
     }
 }
+
+// Algorithm: Binary Search Tree: Insert, Delete and Search
+
+// Algorithm for Insertion:
+// 1. Create a new node with the given data
+// 2. If root is NULL, make the new node as root
+// 3. Else, start traversing the tree from root
+// 4. If the data is less than the current node's data, go to left subtree
+// 5. Else, go to right subtree
+// 6. If the data is already present in the tree, return
+// 7. Else, insert the new node
+
+// Algorithm for Delete a node from a Tree:
+// 1. If the node to be deleted is root, delete it and make its child as root
+// 2. Else, start traversing the tree from root
+// 3. If the data is less than the current node's data, go to left subtree
+// 4. Else, go to right subtree
+// 5. If the data is not found in the tree, return
+// 6. Else, delete the node
+
+// Algorithm for deletion of node with 1 child:
+// 1. If the node to be deleted has only one child, replace the node with its child
+// 2. Else, replace the node with the inorder successor
+
+// Algorithm for deletion of node with 2 children:
+// 1. Find the inorder successor of the node to be deleted
+// 2. Replace the data of node to be deleted with the inorder successor's data
+// 3. Delete the inorder successor
+
+// Algorithm for deletion of node with no child:
+// 1. If the node to be deleted has no child, simply delete it
+// 2. Else, replace the node to be deleted with its child
+
+// Algorithm for searching a node in a binary search tree:
+// 1. Start traversing the tree from root
+// 2. If the data is less than the current node's data, go to left subtree
+// 3. Else, go to right subtree
+// 4. If the data is already present in the tree, return
+// 5. Else, return NULL
+
+// Algorithm for inorder traversal of binary search tree:
+// 1. Start from root
+// 2. Traverse the left subtree by recursively calling inorderTraversal()
+// 3. Visit the node
+// 4. Traverse the right subtree by recursively calling inorderTraversal()
+

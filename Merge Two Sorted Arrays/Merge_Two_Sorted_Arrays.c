@@ -96,6 +96,12 @@ void main() {
     }
 }
 
+// Algorithm:
+// 1. Merge two sorted arrays into one sorted array.
+// 2. Sort the merged array.
+// 3. Display the sorted array.
+// 4. Exit.
+
 // Output:
 // Enter the number of elements in the first array
 // 5
@@ -123,14 +129,3 @@ void main() {
 // 6	7	8	9	10
 // Merged and sorted array is
 // 1	2	3	4	5	6	7	8	9	10
-
-// Time Complexity: O(m+n)
-// Space Complexity: O(m+n)
-// Approach: Merge two sorted arrays into one sorted array.
-
-// Algorithm:
-// 1. Merge two sorted arrays into one sorted array.
-// 2. Sort the merged array.
-// 3. Display the sorted array.
-// 4. Exit.
-// C Program to sort and merge two arrays */

@@ -93,6 +93,7 @@ Algorithm:Push
 3. Assign the address of top to temp->next.
 4. Assign the address of temp to top.
 5. Return.
+
 Algorithm:Pop
 1. If top is NULL, return -1.
 2. Create a node temp.
@@ -100,6 +101,7 @@ Algorithm:Pop
 4. Assign the address of top->next to temp->next.
 5. Assign the address of temp to top.
 6. Return temp->data.
+
 Algorithm:Search
 1. Create a node temp.
 2. Assign the address of top to temp.

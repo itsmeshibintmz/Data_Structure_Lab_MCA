@@ -109,6 +109,7 @@ void main() {
 // 10. Display the elements of the sorted second array
 // 11. Merge and sort two arrays into third One
 // 12. Display the elements of the merged and sorted array
+// 13. Exit
 
 // Output:
 // Enter the number of elements in the first array

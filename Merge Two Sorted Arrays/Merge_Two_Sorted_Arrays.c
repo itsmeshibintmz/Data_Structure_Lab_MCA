@@ -97,10 +97,18 @@ void main() {
 }
 
 // Algorithm:
-// 1. Merge two sorted arrays into one sorted array.
-// 2. Sort the merged array.
-// 3. Display the sorted array.
-// 4. Exit.
+// 1. Input the size of the first array
+// 2. Input the elements of the first array
+// 3. Display the elements of the first array
+// 4. Sort the first array
+// 5. Display the elements of the sorted first array
+// 6. Input the size of the second array
+// 7. Input the elements of the second array
+// 8. Display the elements of the second array
+// 9. Sort the second array
+// 10. Display the elements of the sorted second array
+// 11. Merge and sort two arrays into third One
+// 12. Display the elements of the merged and sorted array
 
 // Output:
 // Enter the number of elements in the first array

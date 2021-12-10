@@ -126,7 +126,7 @@ int main() {
 // 7. Repeat the steps 2 to 6 until the choice is 5.
 // 8. Exit.
 // 9. If the choice is 5, then exit.
-// C Program to Implement Circular Queue Operations */
+// 10. Exit
 
 // Output:
 // 1. Enqueue

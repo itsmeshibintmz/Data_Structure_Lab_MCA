@@ -77,6 +77,4 @@ void main() {
 // 8. Display the array.
 // 9. Exit.
 
-// Time Complexity: O(n)
-// Space Complexity: O(1)
 

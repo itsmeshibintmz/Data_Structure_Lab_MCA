@@ -114,6 +114,20 @@ int main() {
     return 0;
 }
 
+// Algorithm:
+// 1. Create a queue of size MAX.
+// 2. Display the menu.
+// 3. Take the choice from the user.
+// 4. Perform the corresponding operation.  If the choice is 1, then enqueue the element. 
+// If the choice is 2, then dequeue the element.  If the choice is 3, then display the queue.
+// If the choice is 4, then search the queue.
+// 5. Exit.
+// 6. If the choice is not 1, 2, 3 or 4, then display the error message.
+// 7. Repeat the steps 2 to 6 until the choice is 5.
+// 8. Exit.
+// 9. If the choice is 5, then exit.
+// C Program to Implement Circular Queue Operations */
+
 // Output:
 // 1. Enqueue
 // 2. Dequeue
@@ -260,31 +274,4 @@ int main() {
 // 5. Exit
 // Enter your choice
 // 5
-
-// Total execution time is 0.001149 seconds.
-// Time taken by CPU is 0.001149 seconds.
-// Time taken by I/O is 0.000000 seconds.
-// Total time taken by the process is 0.001149 seconds.
-// Time Complexity: O(1)
-// Space Complexity: O(n)
-
-// Approach:
-// We can use a queue to implement the queue operations.
-// We can use a queue to implement the search operation.
-// We can use a queue to implement the display operation.
-// We can use a queue to implement the dequeue operation.
-// We can use a queue to implement the enqueue operation.
-
-// Algorithm:
-// 1. Create a queue of size MAX.
-// 2. Display the menu.
-// 3. Take the choice from the user.
-// 4. Perform the corresponding operation.  If the choice is 1, then enqueue the element. 
-// If the choice is 2, then dequeue the element.  If the choice is 3, then display the queue.
-// If the choice is 4, then search the queue.
-// 5. Exit.
-// 6. If the choice is not 1, 2, 3 or 4, then display the error message.
-// 7. Repeat the steps 2 to 6 until the choice is 5.
-// 8. Exit.
-// 9. If the choice is 5, then exit.
-// C Program to Implement Circular Queue Operations */
+// Exiting, bye!

@@ -85,6 +85,7 @@ int search(int item)
     }
     return -1;
 }
+
 /*
 Algorithm:Push
 1. Create a node temp.
@@ -108,6 +109,7 @@ Algorithm:Search
     3. Assign the address of temp->next to temp.
 4. Return -1.
 */
+
 /*
 Output:
 1. Push

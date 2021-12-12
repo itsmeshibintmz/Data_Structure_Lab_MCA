@@ -172,7 +172,7 @@ void main() {
         scanf("%d", &choice);
         switch (choice) {
             case 1: 
-                printf("\nEnter the node to be insertd into binary search tree: ");
+                printf("\nEnter the node to be inserted into binary search tree: ");
                 scanf("%d", &data);
                 insert(data);
                 break;

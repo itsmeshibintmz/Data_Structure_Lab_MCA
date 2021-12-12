@@ -135,7 +135,7 @@ void inorderTraversal(struct node *node) {
 // Search a node in tree
 struct node* search(int data) {
     struct node *current = root;
-    printf("Visiting elements: ");
+    printf("Searching for element %d in tree\n", data);
 
     while(current->data != data){
 
@@ -184,6 +184,7 @@ void main() {
             case 3: 
                 printf("\nInorder traversal of tree\n");
                 inorderTraversal(root);
+                printf("\n");
                 break;
             case 4: 
                 printf("\nEnter the value to be searched in the tree: ");

@@ -114,8 +114,7 @@ struct node* deleteNode(struct node *node, int value) {
 // Inorder traversal
 void inorderTraversal(struct node *node) {
 
-
-    if(root == NULL){
+    if(root == NULL) {
         printf("Tree is empty\n");
         return;
     }
@@ -137,7 +136,7 @@ struct node* search(int data) {
     struct node *current = root;
     printf("Searching for element %d in tree\n", data);
 
-    while(current->data != data){
+    while(current->data != data) {
 
         if(current != NULL) {
             printf("%d ",current->data);

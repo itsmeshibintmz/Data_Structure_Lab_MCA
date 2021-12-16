@@ -272,3 +272,14 @@ void main() {
 // 3. Visit the node
 // 4. Traverse the right subtree by recursively calling inorderTraversal()
 
+// Algorithm for left subtree traversal of binary search tree:
+// 1. Start from root
+// 2. Traverse the left subtree by recursively calling leftSubtree()
+// 3. Visit the node
+// 4. Traverse the right subtree by recursively calling leftSubtree()
+
+// Algorithm for right subtree traversal of binary search tree:
+// 1. Start from root
+// 2. Traverse the left subtree by recursively calling rightSubtree()
+// 3. Visit the node
+// 4. Traverse the right subtree by recursively calling rightSubtree()

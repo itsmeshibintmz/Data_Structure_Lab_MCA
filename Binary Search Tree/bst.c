@@ -160,14 +160,34 @@ struct node* search(int data) {
     // return current;
 }
 
+// Traversal of left subtree excluding root
+void leftSubtree(struct node *node) {
+    
+    if(node->left != NULL) {
+        printf("%d ", node->left->data);
+        leftSubtree(node->left);
+    }
+    printf("\n");
+}
+
+// Traversal of right subtree excluding root
+void rightSubtree(struct node *node) {
+
+    if(node->right!=NULL) {
+        printf("%d ", node->right->data);
+        rightSubtree(node->right);
+    }
+    printf("\n");
+}
+
 void main() {
     int data;
     int choice = 0;
 
-    while(choice != 5) {
+    while(choice != 7) {
         printf("Binary Search Tree\n");
         printf("------------------\n");
-        printf("\n1.Insertion\n2.Deletion\n3.Inorder Traversal\n4.Search\n5.Quit\nEnter your choice: ");
+        printf("\n1.Insertion\n2.Deletion\n3.Inorder Traversal\n4.Search\n5.Traverse Left Subtree\n6.Traverse Right Sub Tree\n7.Exit\nEnter your choice: ");
         scanf("%d", &choice);
         switch (choice) {
             case 1: 
@@ -192,6 +212,14 @@ void main() {
                 search(data);
                 break;
             case 5: 
+                printf("\nTraverse Left Subtree\n");
+                leftSubtree(root);
+                break;
+            case 6:
+                printf("\nTraverse Right Subtree\n");
+                rightSubtree(root); 
+                break;
+            case 7: 
                 exit(0);
             default: 
                 printf("Wrong choice !!!!!");
